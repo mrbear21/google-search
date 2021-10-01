@@ -6,13 +6,17 @@
         <link rel="icon" type="image/png" href="favicon.png">
         <style>
           body {
-            height: 100%;
             margin: 0;
           }
+          .logo {
+            margin: 10px;
+          }
           .textarea {
-            min-width: 485px;
+            width: 90%;
+            max-width: 485px;
             padding: 12px;
             border-radius: 50px;
+            margin: 10px;
             border: 1px solid lightgray;
           }
           .textarea:hover, .button:hover {
@@ -40,7 +44,7 @@
     <body>
         <div class="form">
             <center>
-            <img src="logo.png" alt="logo">
+            <img class="logo" src="logo.png" alt="logo">
             <form action="https://google.com/search">
                 <input class="textarea" type="text" name="q" placeholder="🔍">
                 <p>
