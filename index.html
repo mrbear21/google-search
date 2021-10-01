@@ -2,18 +2,50 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="icon" type="image/png" href="favicon.png">
         <style>
-            .textarea {
-              width: 700px;
-              height: 30px;
-              border-radius: 50%;
-            }
+          body {
+            height: 100%;
+            margin: 0;
+          }
+          .textarea {
+            min-width: 500px;
+            padding: 12px;
+            border-radius: 50px;
+            border: 1px solid lightgray;
+          }
+          .textarea:hover, .button:hover {
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+          }
+          .button {
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #f5f6fa;
+            border: 0px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+          }
+          .form {
+            top: 25%;
+            width: 100%;
+            position: absolute;
+          }
         </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input class="textarea" type="text" name="q">
-            <input class="button" type="submit" value="Google Search">
-        </form>
+      <center>
+        <div class="form">
+          <img src="logo.png" alt="logo">
+          <form action="https://google.com/search">
+              <input class="textarea" type="text" name="q" placeholder="🔍">
+              <p>
+              <input class="button" type="submit" value="Google Search">
+              <input class="button" type="button" value="I'm Feeling Lucky" onclick="location.href='https://www.google.com/doodles'">
+          </form>
+        </div>
+      </center>
     </body>
 </html>
